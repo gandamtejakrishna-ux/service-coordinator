@@ -1,0 +1,57 @@
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/dadmin/Documents/Hotel-Management-Desk/service-coordinator/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/dadmin/Documents/Hotel-Management-Desk/service-coordinator/target/scala-2.13/classes.bak[0m
+[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$CancelReminders$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$Command.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$OnCheckedIn.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EmailService$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$SendWelcome.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaStreamConsumer.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$OnCheckedOut.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$CancelMenu.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	EmailService.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$ScheduleCheckInReminder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NotificationSupervisor$IncomingEvent$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$SendCheckInEmail$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NotificationSupervisor$Command.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$Command.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$CancelReminders.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$SendCheckInEmail.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$SendCheckOutEmail$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$Command.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$SendMenu$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$OnCheckedOut.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NotificationSupervisor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$SendWifi$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$ScheduleCheckInReminder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$ScheduleMenu$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$OnCheckedOut$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$OnCheckedOut$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$ScheduleCheckOutReminder.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$ScheduleCheckOutReminder$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$SendWelcome$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$SendCheckOutEmail.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	KafkaStreamConsumer$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RoomServiceActor$OnCheckedIn$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	BookingReminderActor$Command.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$CancelMenu$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Main.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$ScheduleMenu.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NotificationSupervisor$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	RestaurantServiceActor$SendMenu.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	NotificationSupervisor$IncomingEvent.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	WifiServiceActor$SendWifi.class[0m
+[0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/dadmin/Documents/Hotel-Management-Desk/service-coordinator/target/scala-2.13/classes.bak[0m

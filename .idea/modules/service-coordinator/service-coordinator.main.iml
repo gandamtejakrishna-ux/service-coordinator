@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="root:main [file:/Users/dadmin/Documents/Hotel-Management-Desk/service-coordinator/]" external.linked.project.path="$MODULE_DIR$/../../.." external.root.project.path="$MODULE_DIR$/../../.." external.system.id="SBT" external.system.module.type="sbtSourceSet" type="JAVA_MODULE" version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="service-coordinator.main" />
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/../../../target/scala-2.13/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../src/main">
+      <sourceFolder url="file://$MODULE_DIR$/../../../src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../src/main/scala" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../../target/scala-2.13/resource_managed/main" />
+    <content url="file://$MODULE_DIR$/../../../target/scala-2.13/src_managed/main" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: scala-sdk-2.13.12" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor-typed_2.13:2.8.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor_2.13:2.8.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-slf4j_2.13:2.8.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-stream_2.13:2.8.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-stream-kafka_2.13:4.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.play:play-json_2.13:2.9.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.kafka:kafka-clients:3.7.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: ch.qos.logback:logback-classic:1.4.11:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.angus:angus-mail:2.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.sun.mail:jakarta.mail:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.sun.activation:jakarta.activation:2.0.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:2.0.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe:config:1.4.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.13:1.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-protobuf-v3_2.13:2.8.8:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe:ssl-config-core_2.13:0.6.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.play:play-functional_2.13:2.9.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.13.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-core:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-annotations:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.fasterxml.jackson.core:jackson-databind:2.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.luben:zstd-jni:1.5.5-6:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.lz4:lz4-java:1.8.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.xerial.snappy:snappy-java:1.1.10.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: ch.qos.logback:logback-core:1.4.11:jar" level="project" />
+    <orderEntry type="library" name="sbt: jakarta.activation:jakarta.activation-api:2.1.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: jakarta.mail:jakarta.mail-api:2.1.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.eclipse.angus:angus-activation:2.0.1:jar" level="project" />
+  </component>
+</module>

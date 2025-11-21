@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.iml" filepath="$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.main.iml" filepath="$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.service-coordinator-build.iml" filepath="$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.service-coordinator-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.test.iml" filepath="$PROJECT_DIR$/.idea/modules/service-coordinator/service-coordinator.test.iml" />
+    </modules>
+  </component>
+</project>

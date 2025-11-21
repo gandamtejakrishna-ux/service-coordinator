@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <option name="separateProdTestSources" value="true" />
+    <profile name="sbt 1" modules="service-coordinator,service-coordinator.main,service-coordinator.test,service-coordinator_6016,service-coordinator_6016.main,service-coordinator_6016.test" />
+  </component>
+</project>

@@ -1,6 +1,3 @@
-# **Service Coordinator — README (Simple Version)**
-
-```
 # Service Coordinator
 
 This microservice listens to Kafka events from the Booking Service and sends:
@@ -54,4 +51,3 @@ https://tejakrishna-g-9710885.postman.co/workspace/Teja-Krishna-Gandam's-Workspa
 
 ## Project Tech Spec
 https://docs.google.com/document/d/11bjs6H4MYlR1RKGjhPuceq4ceioiJBp_seJ1LzujyH4/edit
-```

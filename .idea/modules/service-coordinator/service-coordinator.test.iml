@@ -14,7 +14,6 @@
     <orderEntry type="library" name="sbt: scala-sdk-2.13.12" level="project" />
     <orderEntry type="module" module-name="service-coordinator.main" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.12:jar" level="project" />
-    <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor-typed_2.13:2.8.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-actor_2.13:2.8.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-slf4j_2.13:2.8.8:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-stream_2.13:2.8.8:jar" level="project" />
@@ -25,9 +24,9 @@
     <orderEntry type="library" name="sbt: org.eclipse.angus:angus-mail:2.0.2:jar" level="project" />
     <orderEntry type="library" name="sbt: com.sun.mail:jakarta.mail:2.0.1:jar" level="project" />
     <orderEntry type="library" name="sbt: com.sun.activation:jakarta.activation:2.0.1:jar" level="project" />
-    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:2.0.7:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe:config:1.4.2:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.13:1.0.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:2.0.7:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe.akka:akka-protobuf-v3_2.13:2.8.8:jar" level="project" />
     <orderEntry type="library" name="sbt: org.reactivestreams:reactive-streams:1.0.4:jar" level="project" />
     <orderEntry type="library" name="sbt: com.typesafe:ssl-config-core_2.13:0.6.1:jar" level="project" />

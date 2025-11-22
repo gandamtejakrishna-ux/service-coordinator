@@ -14,7 +14,9 @@ lazy val root = (project in file("."))
 
     libraryDependencies ++= Seq(
       // Akka Typed Actors
-      "com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
+      //      "com.typesafe.akka" %% "akka-actor" % akkaVersion,
+      //      "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
+      //"com.typesafe.akka" %% "akka-actor-typed" % akkaVersion,
       "com.typesafe.akka" %% "akka-actor" % akkaVersion,
       "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
 

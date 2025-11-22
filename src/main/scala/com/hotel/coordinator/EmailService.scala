@@ -6,6 +6,17 @@ import jakarta.mail.internet._
 
 import java.util.Properties
 
+/**
+ * EmailService handles all outgoing emails for the service-coordinator.
+ *
+ * It supports two modes:
+ *  - console : prints emails to the console (useful for development/testing)
+ *  - smtp    : sends real emails using SMTP server credentials
+ *
+ * SMTP settings (host, port, username, password) are loaded from application.conf.
+ *
+ * @param config Application configuration used to read email settings.
+ */
 class EmailService(config: Config) {
 
   private val mode = config.getString("email.mode")
@@ -16,6 +27,13 @@ class EmailService(config: Config) {
   private val smtpUser = config.getString("email.smtp.user")
   private val smtpPass = config.getString("email.smtp.pass")
 
+  /**
+   * Sends an email to the given recipient using either console or SMTP mode.
+   *
+   * @param to Recipient email address
+   * @param subject Email subject
+   * @param body Email content text
+   */
   def sendEmail(to: String, subject: String, body: String): Unit = {
     mode match {
       case "console" =>

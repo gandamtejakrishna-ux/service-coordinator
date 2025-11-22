@@ -6,6 +6,9 @@ import scala.concurrent.duration._
 import scala.collection.mutable
 import com.hotel.coordinator.EmailService
 
+/**
+ * Companion object containing message types and actor props.
+ */
 object BookingReminderActor {
   final case class ScheduleCheckInReminder(payload: JsValue)
   final case class ScheduleCheckOutReminder(payload: JsValue)
@@ -18,6 +21,20 @@ object BookingReminderActor {
   def props(emailService: EmailService): Props = Props(new BookingReminderActor(emailService))
 }
 
+/**
+ * Actor responsible for scheduling and sending automated check-in and check-out reminders.
+ *
+ * <p>This actor:
+ * <ul>
+ *   <li>Sends a check-in reminder (after 1 minute — demo mode).</li>
+ *   <li>Schedules a real check-out reminder 30 minutes before 11 AM.</li>
+ *   <li>Allows cancellation of all reminders for a booking.</li>
+ *   <li>Sends actual email notifications through EmailService.</li>
+ * </ul>
+ *
+ * <p>All reminders use Akka Classic scheduler and store Cancellable handles
+ * so they can be cancelled safely when the booking is checked out.</p>
+ */
 class BookingReminderActor(emailService: EmailService) extends Actor with ActorLogging {
   import BookingReminderActor._
   import context.dispatcher

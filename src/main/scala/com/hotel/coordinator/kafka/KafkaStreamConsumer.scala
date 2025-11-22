@@ -11,10 +11,29 @@ import scala.concurrent.duration._
 import org.slf4j.LoggerFactory
 import com.hotel.coordinator.actors.NotificationSupervisor
 
+/**
+ * KafkaStreamConsumer
+ *
+ * This component starts a Kafka consumer using Akka Streams (Classic Akka)
+ * and forwards every consumed JSON message to the NotificationSupervisor actor.
+ *
+ * Features:
+ *  - Connects to Kafka using bootstrap servers, topic, and groupId from config.
+ *  - Uses RestartSource to auto-restart on failures.
+ *  - Parses each Kafka message as JSON.
+ *  - Sends parsed events to NotificationSupervisor.IncomingEvent.
+ *  - Commits Kafka offsets after successful processing.
+ */
 object KafkaStreamConsumer {
 
   private val logger = LoggerFactory.getLogger("KafkaStreamConsumer")
 
+  /**
+   * Starts the Kafka stream consumer.
+   *
+   * @param supervisor  ActorRef to receive incoming JSON events.
+   * @param system      Classic ActorSystem used to run Akka Streams and consumer.
+   */
   def start(supervisor: ActorRef, system: ActorSystem): Unit = {
 
     implicit val sys: ActorSystem = system

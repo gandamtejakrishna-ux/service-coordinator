@@ -9,6 +9,14 @@ class RoomServiceActor(emailService: EmailService)
 
   import RoomServiceActor._
 
+  /**
+   * Handles incoming Room Service commands.
+   *
+   * Supported messages:
+   *  - SendWelcome: send welcome email to guest.
+   *  - OnCheckedIn: log check-in event.
+   *  - OnCheckedOut: log check-out event.
+   */
   override def receive: Receive = {
 
     
@@ -46,11 +54,17 @@ class RoomServiceActor(emailService: EmailService)
 
 object RoomServiceActor {
 
+  /**
+   * Base trait for all Room Service commands.
+   */
   sealed trait Command
   final case class SendWelcome(payload: JsValue) extends Command
   final case class OnCheckedIn(payload: JsValue) extends Command
   final case class OnCheckedOut(payload: JsValue) extends Command
 
+  /**
+   * Create Props for RoomServiceActor.
+   */
   def props(emailService: EmailService): Props =
     Props(new RoomServiceActor(emailService))
 }

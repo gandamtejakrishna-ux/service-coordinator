@@ -4,6 +4,14 @@ import akka.actor.{ActorSystem, Props}
 import com.hotel.coordinator.actors.NotificationSupervisor
 import com.hotel.coordinator.kafka.KafkaStreamConsumer
 
+/**
+ * Entry point for the Service Coordinator microservice.
+ *
+ * - Starts the ActorSystem for Akka Classic.
+ * - Creates the NotificationSupervisor actor which handles all service emails.
+ * - Starts the Kafka consumer to receive booking events from Kafka.
+ * - Adds a shutdown hook to gracefully stop the ActorSystem.
+ */
 object Main {
   def main(args: Array[String]): Unit = {
     println("Starting service-coordinator...")

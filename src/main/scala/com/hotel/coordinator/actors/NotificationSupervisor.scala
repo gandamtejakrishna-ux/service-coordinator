@@ -7,6 +7,27 @@ import com.hotel.coordinator.actors.services._
 import com.typesafe.config.ConfigFactory
 import scala.concurrent.duration._
 
+/**
+ * NotificationSupervisor is the central Akka Classic actor responsible for handling
+ * all booking-related events received from Kafka.
+ *
+ * Responsibilities:
+ *  - Receives events (BOOKING_CREATED, CHECKED_IN, CHECKED_OUT)
+ *  - Routes tasks to child actors:
+ *      • RoomServiceActor → welcome mails & room-related tasks
+ *      • WifiServiceActor → Wi-Fi credential emails
+ *      • BookingReminderActor → check-in/check-out reminders
+ *      • RestaurantServiceActor → daily menu emails
+ *
+ *  - Loads restaurant scheduling configuration (initial delay, interval)
+ *  - Ensures each service receives only the event it needs
+ *
+ * Child Actors:
+ *  room-service, wifi-service, booking-reminders, restaurant-service
+ *
+ * Triggered by:
+ *  KafkaStreamConsumer → IncomingEvent(JSON)
+ */
 object NotificationSupervisor {
   // ONE definition (shared everywhere)
   case class IncomingEvent(payload: JsValue)

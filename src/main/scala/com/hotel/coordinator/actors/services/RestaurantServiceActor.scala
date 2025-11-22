@@ -6,6 +6,24 @@ import com.hotel.coordinator.EmailService
 import scala.concurrent.duration._
 import scala.collection.mutable
 
+/**
+ * Actor responsible for handling restaurant-related notifications for guests.
+ *
+ * <p>This actor schedules and sends automated daily menu emails to guests
+ * while they stay in the hotel. When the guest checks out, the scheduled
+ * menu emails are cancelled automatically.</p>
+ *
+ * <p>Features:</p>
+ * <ul>
+ *   <li>Schedules repeating daily menu emails using Akka scheduler.</li>
+ *   <li>Cancels the email schedule on guest check-out.</li>
+ *   <li>Uses EmailService to send emails in either console or SMTP mode.</li>
+ * </ul>
+ *
+ * @param emailService  Service used to send actual emails
+ * @param initialDelay  Delay before the first menu email is sent
+ * @param interval      Interval between subsequent menu emails
+ */
 class RestaurantServiceActor(emailService: EmailService,
                              initialDelay: FiniteDuration,
                              interval: FiniteDuration)
@@ -14,13 +32,19 @@ class RestaurantServiceActor(emailService: EmailService,
   import RestaurantServiceActor._
   import context.dispatcher   // ExecutionContext for scheduler
 
-  // bookingId -> scheduler handle
+  /** Stores active schedules mapped by bookingId */
   private val schedules = mutable.Map.empty[String, Cancellable]
 
+  /**
+   * Handles incoming messages for scheduling or cancelling menu emails.
+   */
   override def receive: Receive = {
 
-    
-    // SCHEDULE DAILY MENU EMAIL
+
+    /**
+     * Schedules a repeating daily menu email for the given booking.
+     * Extracts guest email and bookingId from the JSON payload.
+     */
     case ScheduleMenu(js) =>
       val bookingId = (js \ "bookingId").asOpt[String].getOrElse {
         val gen = java.util.UUID.randomUUID().toString
@@ -49,8 +73,10 @@ class RestaurantServiceActor(emailService: EmailService,
         )
       }
 
-    
-    // CANCEL DAILY MENU EMAIL
+
+    /**
+     * Cancels scheduled daily emails when guest checks out.
+     */
     case CancelMenu(js) =>
       val bookingId = (js \ "bookingId").asOpt[String].getOrElse("")
 
@@ -59,8 +85,10 @@ class RestaurantServiceActor(emailService: EmailService,
         log.info(s"RestaurantServiceActor: cancelled schedule for booking=$bookingId")
       }
 
-    
-    // INTERNAL MESSAGE (unused but kept for compatibility)
+
+    /**
+     * Internal message (not used in Classic version).
+     */
     case SendMenu(_) =>
       // Not used in classic version
       ()
@@ -74,6 +102,9 @@ object RestaurantServiceActor {
   final case class CancelMenu(payload: JsValue) extends Command
   final case class SendMenu(bookingId: String) extends Command
 
+  /**
+   * Creates Props for RestaurantServiceActor.
+   */
   def props(emailService: EmailService,
             initialDelay: FiniteDuration,
             interval: FiniteDuration): Props =
